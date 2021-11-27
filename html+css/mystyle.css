@@ -1,0 +1,330 @@
+/*Defenições css da página inicial*/
+
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body{
+        margin:0;
+    }
+
+
+    /*Background estatico para todas as paginas*/
+    .background{
+        margin: 0;
+        padding: 0;
+        background: url("img/rinque.png");
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        
+    }
+
+    
+
+/* -----------------------------------------Página Inicial-----------------------------------------*/
+
+/* Formatação do fundo da pagina inicial*/
+    .initial_background{
+        background-image:url('img/inicio_background.jpg');
+        opacity:0.75;
+        position:absolute;
+        top:0;
+        bottom:0;
+        right:0;
+        left:0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index:-1;
+    }
+
+    .initial_container {
+        display:flex;
+        justify-content:space-around;
+        margin-top:120px; margin-left: 20px; margin-right:20px;
+        flex-wrap: wrap;   
+    }
+
+    .item_container {
+        width:70%;
+        text-align:center;
+        display:flex; 
+        justify-content:space-around; 
+        align-items:center;
+    }
+
+    .div_image_init {
+        width:200px;height:240px;
+        background-size: cover;
+        background-position: left left;
+        border-radius:70%;
+        border: 7px solid #262626;
+     }
+
+    .text_init {
+        display:flex; 
+        flex-direction:column; 
+        align-items:center; 
+        width: 420px;
+        font-size: 12pt;
+        /*font-weight: bold;*/
+    }
+
+    #boldP{
+        font-weight: bold;
+        text-align: center;
+    }
+
+    #flatlink {
+        text-decoration: none;
+        font-weight: bold;
+        text-align: center;
+        color: #000
+    }
+
+    p.center {
+        text-align: center;
+    }
+
+    .button_container {
+        position: relative;
+        margin-top: 160px;
+        align-items: center;
+    }
+
+        /* botões para downloads */
+    .button_site {
+        border-radius: 3px;
+        border: 1px solid black;
+        padding: 10px;
+        cursor: pointer;
+        margin: 40px;
+        margin-top:20px;
+        display: inline-block;
+        color: white;
+        text-align: center;
+        font-size: 14px;
+        font-family: "Lato", sans-serif;
+        text-decoration: none;
+        position: absolute;
+        left: 275px
+    }
+
+    .button_site:hover {
+        background-color: #262626;
+    }
+
+    .button_download {
+        border-radius: 3px;
+        border: 1px solid black;
+        padding: 10px;
+        cursor: pointer;
+        margin: 40px;
+        margin-top:20px;
+        display: inline-block;
+        color: black;
+        text-align: center;
+        font-size: 14px;
+        font-family: "Lato", sans-serif;
+        text-decoration: none;
+        position: absolute;
+        right: 365px ;
+
+    }
+
+    .button_download:hover {
+        background-color: #DDC6B1;
+    }
+
+
+/* -----------------------------------------Barra de navegação-----------------------------------------*/
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: #333;
+        position: fixed;
+        top: 5px;
+        width: 100%;
+    }
+    
+    #right {
+        float: right;
+    }
+
+    #name {
+        float: left;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;  
+    }
+
+    #active {
+        background-color: #44546A;
+    }
+    
+    li a, .dropbtn {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+    li a:hover, .dropdown:hover .dropbtn {
+        background-color: #7C7C7C;
+    }
+    
+    li.dropdown {
+        display: inline-block;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+    
+    .dropdown-content a:hover {background-color: #f1f1f1;}
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+
+/* -----------------------------------------Página de download-------------------------------------------------*/
+
+    .download_container {
+
+        justify-content: space-around;
+        display: flex;
+        margin-top: 150px;
+        height: 100px;
+        
+    }
+
+    .download_icon {
+      /*background-color: red;*/
+      margin: 10px;
+      padding: 10px;
+      height: 30px;
+    }
+
+    .div-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .text_div{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 14px;
+        text-align: center;
+        margin-top: 200px;
+    }
+
+    .text_div a{
+        text-decoration: none;
+        color: black;
+    }
+
+
+/*-----------------------------------------wrapper das paginas-------------------------------------------------------*/
+
+    .wrapper {
+        height: 100%;
+        line-height: 1.5;
+        word-spacing: 4px;
+        letter-spacing: 1px;
+        font-size: 14px;
+        margin-top: 140px;
+    }
+
+/*---------------------------------------------Página "sobre"--------------------------------------------------------*/
+
+    .center_div{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .par{
+        text-align: justify;
+    }
+
+
+/*---------------------------------------------Página "experiência"--------------------------------------------------*/
+
+
+    .big_container{
+        display: flex;
+        justify-content: space-around;
+        height: 100px;
+    }
+
+    .img_container{
+        margin: 10px;
+        padding: 10px;
+        height: 30px;
+    }
+
+    img.rounded_corners{
+        border-radius: 25px;
+        border: 4px solid #44546A;
+    }
+
+    .text_container{
+        text-align: justify;
+        position: absolute;
+        margin-top: 160px;
+        margin-left: 90px;
+        margin-right: 90px;
+        position: static;
+    }
+
+    .text{
+        word-break: keep-all;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 14px;
+    }
+
+
+    .club_container{
+        display:flex;
+        justify-content:space-around;
+        margin-top:120px; margin-left: 20px; margin-right:20px;
+        flex-wrap: wrap; 
+    }
+
+    .club_symbol{
+        display:inline-block;
+        width:200px;height:240px;
+        background-size: cover;
+        background-position: left left;
+    }
+
+    .club_name{
+        display:inline-block;
+    }
+
+
+
+
+
+
+
