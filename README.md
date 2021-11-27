@@ -1,5 +1,5 @@
-# SIE_website
+# SIE_Projects
 
-Project developed during the class of vision based systems on the first year of my masters degree
+Projects developed during the class of business information systems on the second year of my masters degree
 
 Portuguese only
