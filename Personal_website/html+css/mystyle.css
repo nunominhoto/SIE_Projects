@@ -23,6 +23,19 @@
         
     }
 
+    /*Background estatico para todas as paginas*/
+    .init_background{
+        margin: 0;
+        padding: 0;
+        background: url("img/background_inicial.png");
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        
+    }
+
     
 
 /* -----------------------------------------Página Inicial-----------------------------------------*/
@@ -101,7 +114,7 @@
         padding: 10px;
         cursor: pointer;
         margin: 40px;
-        margin-top:20px;
+        margin-top:5px;
         display: inline-block;
         color: white;
         transition: all 0.5s;
@@ -110,7 +123,7 @@
         font-family: "Lato", sans-serif;
         text-decoration: none;
         position: absolute;
-        left: 298px
+        left: 23%;
     }
 
     .button_site:hover {
@@ -126,7 +139,7 @@
         padding: 10px;
         cursor: pointer;
         margin: 40px;
-        margin-top:20px;
+        margin-top:5px;
         transition: all 0.5s;
         display: inline-block;
         color: black;
@@ -135,7 +148,7 @@
         font-family: "Lato", sans-serif;
         text-decoration: none;
         position: absolute;
-        right: 400px ;
+        right: 30.5% ;
 
     }
 
@@ -343,7 +356,7 @@
 
     .image_left {
         position:absolute;
-        left: 140px;
+        left: 17%;
         top: 120px;
         width: 321px;
         height: 417px;
@@ -355,8 +368,8 @@
         font-size: 12px;
         font-weight: normal;
         color: black;
-        left: 600px;
-        top: 110px;
+        right: 15%;
+        top: 117px;
         width: 480px;
     }
 
