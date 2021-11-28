@@ -70,7 +70,6 @@
         align-items:center; 
         width: 420px;
         font-size: 12pt;
-        /*font-weight: bold;*/
     }
 
     #boldP{
@@ -105,16 +104,20 @@
         margin-top:20px;
         display: inline-block;
         color: white;
+        transition: all 0.5s;
         text-align: center;
         font-size: 14px;
         font-family: "Lato", sans-serif;
         text-decoration: none;
         position: absolute;
-        left: 275px
+        left: 298px
     }
 
     .button_site:hover {
         background-color: #262626;
+        animation-name: FadeIn;
+        animation-duration: 3s;
+        transition-timing-function: linear;
     }
 
     .button_download {
@@ -124,6 +127,7 @@
         cursor: pointer;
         margin: 40px;
         margin-top:20px;
+        transition: all 0.5s;
         display: inline-block;
         color: black;
         text-align: center;
@@ -131,13 +135,15 @@
         font-family: "Lato", sans-serif;
         text-decoration: none;
         position: absolute;
-        right: 365px ;
+        right: 400px ;
 
     }
 
     .button_download:hover {
         background-color: #DDC6B1;
     }
+    
+
 
 
 /* -----------------------------------------Barra de navegação-----------------------------------------*/
@@ -150,6 +156,8 @@
         position: fixed;
         top: 5px;
         width: 100%;
+        z-index: 1;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
     
     #right {
@@ -168,16 +176,19 @@
         background-color: #44546A;
     }
     
-    li a, .dropbtn {
+    li a, .dropbtn, .extra{
         display: inline-block;
         color: white;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
     }
+
     
-    li a:hover, .dropdown:hover .dropbtn {
+    
+    li a:hover, .dropdown:hover .dropbtn , .extra:hover{
         background-color: #7C7C7C;
+        transition: all 0.5s;
     }
     
     li.dropdown {
@@ -214,7 +225,7 @@
 
         justify-content: space-around;
         display: flex;
-        margin-top: 150px;
+        margin-top: 80px;
         height: 100px;
         
     }
@@ -232,10 +243,9 @@
     }
 
     .text_div{
-        font-family: 'Times New Roman', Times, serif;
         font-size: 14px;
         text-align: center;
-        margin-top: 200px;
+        margin-top: 150px;
     }
 
     .text_div a{
@@ -252,20 +262,38 @@
         word-spacing: 4px;
         letter-spacing: 1px;
         font-size: 14px;
-        margin-top: 140px;
+        margin-top: 70px;
+        font-family: Arial, Helvetica, sans-serif;
     }
 
 /*---------------------------------------------Página "sobre"--------------------------------------------------------*/
 
-    .center_div{
-        font-family: 'Times New Roman', Times, serif;
+    .sobre_div{
         font-size: 14px;
-        text-align: center;
+        text-align: justify;
+        margin-left: 90px;
+        margin-right: 90px;
+        margin-top: 50px;
+        margin-bottom: 50px
     }
 
-    .par{
-        text-align: justify;
+    #title_sobre{
+        text-align: center;
+        font-family: "Tahoma", sans-serif;
+        font-size: 20px;
+        margin-top: 90px;
+        font-weight: bold;
+        color: black;
     }
+
+    #other_title{
+        text-align: center;
+        font-family: "Tahoma", sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+    }
+
 
 
 /*---------------------------------------------Página "experiência"--------------------------------------------------*/
@@ -283,10 +311,55 @@
         height: 30px;
     }
 
-    img.rounded_corners{
-        border-radius: 25px;
-        border: 4px solid #44546A;
+    /* animação para transição de imagens */
+    .crossfading img { 
+        animation-name: multiple-image-crossfade;
+        /*speed curve of an animation*/
+        animation-timing-function: ease-in-out; /*The animation has both a slow start and a slow end*/
+        animation-iteration-count: infinite;
+        animation-duration: 20s;
+        border-radius: 15%;
     }
+    .crossfading img:nth-of-type(1) { /*primeira imagem que coloco (1º img no código) é a última a aparecer*/
+        animation-delay: 15s;
+    }
+    .crossfading img:nth-of-type(2) {
+        animation-delay: 10s;
+    }
+    .crossfading img:nth-of-type(3) {
+        animation-delay: 5s;
+    }
+    .crossfading img:nth-of-type(4) {
+        animation-delay: 0;
+    }
+
+    @keyframes multiple-image-crossfade {
+    0% {opacity:1;} /*inicio da animaçao*/
+    17% {opacity:1;} /*17% da duraçao da animação*/
+    25% {opacity:0;}
+    92% {opacity:0;}
+    100% {opacity:1;}
+    }
+
+    .image_left {
+        position:absolute;
+        left: 140px;
+        top: 120px;
+        width: 321px;
+        height: 417px;
+    }
+
+    .right_text {
+        position:absolute;
+        text-align:justify;
+        font-size: 12px;
+        font-weight: normal;
+        color: black;
+        left: 600px;
+        top: 110px;
+        width: 480px;
+    }
+
 
     .text_container{
         text-align: justify;
@@ -299,14 +372,14 @@
 
     .text{
         word-break: keep-all;
-        font-family: 'Times New Roman', Times, serif;
+        font-family: Arial, Helvetica, sans-serif;
         font-size: 14px;
     }
 
     .club_container {
         display:flex;
         justify-content:space-around;
-        margin-top:120px; margin-left: 20px; margin-right:20px; margin-bottom: 0px;
+        margin-top:520px; margin-left: 20px; margin-right:20px; margin-bottom: 0px;
         flex-wrap: wrap;   
     }
 
@@ -339,42 +412,185 @@
     }
 
     .memorias_list_image {
-        display:flex;
-        justify-content:space-around;
-        margin-top:75px; margin-left: 20px; margin-right:20px;
-    }
-  
+        display: flex;
+        width: 100%;
+        padding: 4% 2%;
+        box-sizing: border-box;
+        height: 100vh;
+      }
+      
     .memorias_itemContainer {
-        width:25%;
-        text-align:center;
-        background-color: #44546A;
-        padding: 20px;
-        border-radius: 10%;
+        flex: 1;
+        overflow: hidden;
+        transition: .5s;
+        margin: 0 2%;
+        box-shadow: 0 20px 30px rgba(0,0,0,.1);
+        line-height: 0;
     }
-
-    .memorias_divImage {
-        width:250px;height:200px;
-        background-size: cover;
-        background-position: center center;
-        margin-left:auto; margin-right:auto;
+      
+    .memorias_itemContainer > img {
+    width: 200%;
+    height: calc(100% - 10vh);
+    object-fit: cover; 
+    transition: .5s;
     }
-
-    .memorias_legenda{
-        color: white;
-        text-align: center;
+      
+    .memorias_itemContainer > span {
+    font-size: 2.2vh;
+    display: block;
+    text-align: center;
+    height: 10vh;
+    line-height: 2.6;
+    }
+      
+    .memorias_itemContainer:hover { flex: 1 1 50%; }
+    .memorias_itemContainer:hover > img {
+    width: 100%;
+    height: 100%;
     }
 
     .video_div{
         margin-top: 80px;
-        background-image: url(img/baliza.jpg);
+        /*background-image: url(img/baliza.jpg);*/
         width: 100%;
     }
 
 /*---------------------------------------Galeria equipas---------------------------------------------*/
 
+    #teams_title{
+        text-align: center;
+        font-family: "Tahoma", sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+        padding-top:60px;
+        padding-bottom:0;
+    }
+
+    .teams_wrapper{
+        height: 100%;
+        line-height: 1.5;
+        word-spacing: 4px;
+        letter-spacing: 1px;
+        font-size: 14px;
+    }
+
+    #team_3{
+        width:96%;
+        margin:2.7%;
+    }
+
+    .team_column {
+        float: left;
+        width: 31.33%;
+        padding:20px;
+        margin-right:2%;
+        margin-bottom:2%;
+        box-sizing:border-box;
+        box-shadow: 8px 8px 16px 10px rgba(0,0,0,1);
+    }
+      
+    .team_column img {
+        width:100%;
+        opacity:0.5;
+        height:50vh; 
+        z-index: 3;
+    }
+    
+    .team_column:hover img {
+        opacity:1;
+        transition: all 0.8s;
+    }
+    
+    .team_column:hover .libtext {
+        color: #595959;
+    }
+
+    .team_name {
+        font-family:times, "Times New Roman", sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        color: black;
+        text-align:center;
+        padding:20px;
+    }
+
+    .team_table{ 
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1090px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .team_table th{
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        width: 40%;
+    }
 
 
+    tr:nth-child(even){background-color: rgba(100, 100, 100, 0.5);}
 
+/*---------------------------Pagina específica de uma equipa-------------------------------------*/
+
+    .team_symbol {
+        width:140px;
+        height:150px;
+    }
+
+    .team_container {
+        display:flex;
+        justify-content:space-around;
+        margin-top:100px; margin-left: 20px; margin-right:20px; margin-bottom: 0px;
+        flex-wrap: wrap;   
+    }
+
+    #seleção{
+        width:200px;
+        height:100px;
+        margin-right: 25px;
+    }
+
+    .team_n {
+        display:flex; 
+        flex-direction:column; 
+        align-items:left; 
+        font-family: 'Aharoni', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .team_item {
+        width:40%;
+        text-align:center;
+        display:flex; 
+        justify-content:space-around; 
+        align-items:center;
+    }
+
+    .team_text_container{
+        text-align: justify;
+        margin-top: 80px;
+        margin-left: 90px;
+        margin-right: 90px;
+        position: static;
+    }
+
+    .team_trophies{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 30%;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+    }
+
+    .team_trophies th{
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
 
 
 

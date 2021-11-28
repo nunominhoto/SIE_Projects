@@ -13,14 +13,14 @@
 
     <body class="background">
 
-<!-- ***************************************************** NAVBAR ************************************************  -->
+<!--***************************************************** NAVBAR ************************************************  -->
 
         <ul class="navbar">
             <li id="left"><span id="name">Hoquei em Patins</span></li>
 
             <li id="right"><a href="downloads.html">Downloads</a></li>
             <li id="right" class="dropdown">
-                <a href="" class="dropbtn">Equipas</a>
+                <span class="extra">Equipas</span>
                     <div class="dropdown-content">
                         <a href="clubes.html">Clubes</a>
                         <a href="seleções.html">Seleções</a>
@@ -36,25 +36,16 @@
 
         <div class="big_container">
 
-            <div class="img_container">
-                <img class = "rounded_corners" src="img/me.jpg" alt="me" width="150" height="175">
-            </div>
-    
-            <div class="img_container">
-                <img class = "rounded_corners" src="img/me2.jpg" alt="me2" width="150" height="175">
-            </div>
-    
-            <div class="img_container">
-                <img class = "rounded_corners" src="img/me3.jpg" alt="me3" width="150" height="175">
-            </div>
-    
-            <div class="img_container">
-                <img class = "rounded_corners" src="img/me4.jpg" alt="me4" width="150" height="175">
+            <div class="crossfading">
+                <img class="image_left" src="img/me.jpg" alt="me">
+                <img class="image_left" src="img/me2.jpg" alt="me2">
+                <img class="image_left" src="img/me3.jpg" alt="me3">
+                <img class="image_left" src="img/me4.jpg" alt="me4">
             </div>
     
         </div>
-    
-        <div class="text_container">
+
+        <div class="right_text">
     
             <p class="text">A minha aventura neste desporto começou em 2005 quando tinha apenas 7 anos, por influência do meu irmão mais velho que já praticava. 
                 Após 2 anos de introdução à patinagem integrei na equipa de benjamins do clube académico de bragança como guarda-redes. 
@@ -63,25 +54,26 @@
                 <h4>Porque guarda-redes?</h4>
                 
                 <p class="text"> O meu domínio inicial da patinagem não era excelente, tal como o controlo de bola e visão de jogo. E uma vez que a equipa tinha falta de alguém que guardasse a sua baliza aceitei o desafio. </p>
-                <p class="text"></p>E até aos dias de hoje não me arrependo da minha decisão. </p>
+                <p class="text">E até aos dias de hoje não me arrependo da minha decisão. </p>
                 
     
                 <p class="text">Após 9 anos de jogos federados, participando em campeonatos e torneios tanto nacionais como internacionais, a altura de "pendurar as luvas e patins" chegou quando tive de me deslocar para outra cidade, por razões académicas, e deixou de ser viável continuar a praticar este desporto.</p>
     
         </div>
 
-            <!-- Container que vai conter a foto e texto descritivo-->
-            <div class="club_container">
-            
-                <!-- Container da imagem e o texto adjacente-->
-                <div class="club_item">
-                    <div class="club_symbol" style="background-image: url('img/CAB.png');"></div>
-    
-                    <div class="club_name">
-                        <h1>Clube Académico de Bragança</h1>
-                    </div>
+
+        <!-- Container que vai conter a foto e texto descritivo-->
+        <div class="club_container">
+        
+            <!-- Container da imagem e o texto adjacente-->
+            <div class="club_item">
+                <div class="club_symbol" style="background-image: url('img/CAB.png');"></div>
+
+                <div class="club_name">
+                    <h1>Clube Académico de Bragança</h1>
                 </div>
             </div>
+        </div>
         
 
         <div class="text_container">
@@ -99,28 +91,25 @@
             <div class="memorias_list_image">
 
                 <div class="memorias_itemContainer">
-                    <div class="memorias_divImage" style="background-image: url('img/Lisboa.jpg');"></div>
-                    <p class="memorias_legenda"> Dos primeiros jogos em lisboa contra a equipa do benfica
-                    </p>
+                    <img src="img/Lisboa.jpg">
+                    <span>Dos primeiros jogos em Lisboa contra o Benfica</span>
                 </div>
 
                 <div class="memorias_itemContainer">
-                    <div class="memorias_divImage" style="background-image: url('img/ultimo_ano.jpg');"></div>
-                    <p class="memorias_legenda"> Um dos jogos da ultima época no ativo
-                    </p>
+                    <img src="img/ultimo_ano.jpg">
+                    <span>Ultimo jogo oficial</span>
                 </div>
 
                 <div class="memorias_itemContainer">
-                    <div class="memorias_divImage" style="background-image: url('img/treino_antigos.jpg');"></div>
-                    <p class="memorias_legenda"> Treino realizado com jogadores antigos do clube
-                    </p>
+                    <img src="img/treino_antigos.jpg">
+                    <span>Treino de jogadores antigos</span>
                 </div>
 
             </div>
 
             <div class="video_div">
 
-                <video width="320" height="240" controls>
+                <video width="400" height="320" controls>
                     <source src="img/defesa.mp4" type="video/mp4">
                     <source src="movie.ogg" type="video/ogg">
                   Your browser does not support the video tag.
@@ -134,36 +123,6 @@
 
 
     </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 </html>
